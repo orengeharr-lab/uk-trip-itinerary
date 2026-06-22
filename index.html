@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#1C2430">
 <title>英国12天深度游行程</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,6 +35,8 @@
     --paper:#EFF1ED;
     --card:#FAFBF8;
     --ink:#1C2430;
+    --ink-fixed:#1C2430;
+    --ink-contrast:#F2F1EC;
     --ink-soft:#52605C;
     --ink-faint:#8A958F;
     --line:#D6DAD2;
@@ -62,8 +65,8 @@
   .wrap{max-width:640px;margin:0 auto;padding:0 0 60px;}
 
   header.hero{
-    background:var(--ink);
-    color:#F2F1EC;
+    background:var(--ink-fixed);
+    color:var(--ink-contrast);
     padding:28px 20px 22px;
   }
   .hero-flag{font-size:13px;letter-spacing:.04em;color:#B9C2BC;margin:0 0 6px;font-weight:500;}
@@ -263,7 +266,7 @@
   .spot-check input:checked + span{text-decoration:line-through;color:var(--ink-faint);}
   .back-today{
     position:fixed;right:16px;bottom:18px;z-index:15;border:0;border-radius:8px;
-    background:var(--ink);color:#F2F1EC;padding:9px 11px;font:inherit;font-size:12px;font-weight:600;
+    background:var(--ink-fixed);color:var(--ink-contrast);padding:9px 11px;font:inherit;font-size:12px;font-weight:600;
     box-shadow:0 6px 20px rgba(28,36,48,.24);cursor:pointer;display:none;
   }
   .back-today.show{display:block;}
@@ -308,7 +311,7 @@
   .next-stop-copy .blk-label{margin:0 0 1px;}
   .next-stop-name{font-size:13px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .next-stop-link{
-    flex:0 0 auto;border-radius:6px;background:var(--ink);color:#F2F1EC;text-decoration:none;
+    flex:0 0 auto;border-radius:6px;background:var(--ink-fixed);color:var(--ink-contrast);text-decoration:none;
     padding:6px 9px;font-size:11px;font-weight:600;
   }
   .next-stop-link[aria-disabled="true"]{background:var(--line);color:var(--ink-faint);pointer-events:none;}
@@ -316,7 +319,7 @@
   .copy-toast{
     position:fixed;left:50%;bottom:18px;z-index:20;
     transform:translate(-50%,12px);
-    background:var(--ink);color:#F2F1EC;
+    background:var(--ink-fixed);color:var(--ink-contrast);
     border-radius:999px;
     padding:9px 13px;
     font-size:13px;
@@ -360,7 +363,7 @@
   .cost-row .desc{font-size:12.5px;color:var(--ink-soft);margin-top:2px;}
   .cost-row .amt{font-family:'Barlow Semi Condensed',sans-serif;font-weight:600;font-size:14px;white-space:nowrap;color:var(--ink);}
   .cost-total{
-    margin:10px 16px 0;background:var(--ink);color:#F2F1EC;
+    margin:10px 16px 0;background:var(--ink-fixed);color:var(--ink-contrast);
     border-radius:10px;padding:13px 14px;
     display:flex;justify-content:space-between;align-items:baseline;
   }
@@ -722,7 +725,6 @@ Departing from  Gate J And Gate K, Inside Edinburgh Bus Station, St Andrew Squar
 23:40 Caledonian Sleeper
 From Edinburgh
 To London Euston
-Coach G, Room 5
 Coach G, Room 5</p>
     </details>
   </div>
